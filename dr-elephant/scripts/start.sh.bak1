@@ -35,12 +35,6 @@ project_root=$( cd "$( dirname "${BASH_SOURCE[0]}" )/../" && pwd )
 scripts_dir=$project_root/scripts
 echo "Scripts directory: $scripts_dir"
 export PSO_DIR_PATH=$scripts_dir/pso
-export HADOOP_HOME=/usr/lib/hadoop
-export HADOOP_CONF_DIR=/etc/hadoop/conf
-export PATH=$HADOOP_HOME/bin:$PATH
-export SPARK_HOME=/usr/lib/spark
-export SPARK_CONF_DIR=/etc/spark/conf
-export PATH=$HADOOP_HOME/bin:$SPARK_HOME/bin:$PATH
 
 # User could set an environmental variable, ELEPHANT_CONF_DIR, or pass an optional argument(config file path)
 if [ -z "$1" ]; then
