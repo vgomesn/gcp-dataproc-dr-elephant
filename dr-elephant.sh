@@ -147,7 +147,7 @@ EOF
 
 function prepare_mysql() {
   systemctl restart mysql
-  mysql -h 104.197.50.173 -u root -proot-password -e "DROP DATABASE drelephant;"
+  #mysql -h 104.197.50.173 -u root -proot-password -e "DROP DATABASE drelephant;"
   mysql -h 104.197.50.173 -u root -proot-password -e "CREATE DATABASE drelephant;"
 }
 
