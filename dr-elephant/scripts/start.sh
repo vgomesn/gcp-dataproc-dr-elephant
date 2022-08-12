@@ -40,6 +40,8 @@ export HADOOP_CONF_DIR=/etc/hadoop/conf
 export PATH=$HADOOP_HOME/bin:$PATH
 export SPARK_HOME=/usr/lib/spark
 export SPARK_CONF_DIR=/etc/spark/conf
+export HIVE_CONF_DIR=/etc/hive/conf
+
 export PATH=$HADOOP_HOME/bin:$SPARK_HOME/bin:$PATH
 
 # User could set an environmental variable, ELEPHANT_CONF_DIR, or pass an optional argument(config file path)
